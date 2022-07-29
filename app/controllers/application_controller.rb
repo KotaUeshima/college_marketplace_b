@@ -5,24 +5,24 @@ class ApplicationController < Sinatra::Base
     { message: "Good luck with your project!" }.to_json
     end
 
-    get "/login?/"
-    if user_name = find_by(user_name)where(user_name == user_name)
+    get "/users/"
+      User.all.to_json
     end
     
-    get "/movie_characters" do
-    movie.movie_characters.all{}
-    end
+    # get "/movie_characters" do
+    # movie.movie_characters.all{}
+    # end
     
-    post "/movie_characters" do
-    create.movie_characters(params)
-    end
+    # post "/movie_characters" do
+    # create.movie_characters(params)
+    # end
     
-    patch "/movie_character/:id" do
-    update.movie_character.id
-    end
+    # patch "/movie_character/:id" do
+    # update.movie_character.id
+    # end
     
-    delete "/movie_character/:id" do
-    movie_character.find_by(:id).destroy
-    end
+    # delete "/movie_character/:id" do
+    # movie_character.find_by(:id).destroy
+    # end
     
 end
