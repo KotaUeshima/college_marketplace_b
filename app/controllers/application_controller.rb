@@ -4,6 +4,10 @@ class ApplicationController < Sinatra::Base
   get "/test" do
     { message: "Good luck with your project!" }.to_json
     end
+
+    get "/login?/"
+    if user_name = find_by(user_name)where(user_name == user_name)
+    end
     
     get "/movie_characters" do
     movie.movie_characters.all{}
