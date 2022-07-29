@@ -1,12 +1,17 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
-  get "/test" do
-    { message: "Good luck with your project!" }.to_json
-    end
+    # get "/test" do
+    # { message: "Good luck with your project!" }.to_json
+    # end
 
-    get "/users/"
-      User.all.to_json
+    # get "/users/:id" do
+    #   User.find(params[:id]).to_json
+    # end
+
+    get "/users/:login" do
+      binding.pry
+      User.find_by(params[:login]).to_json
     end
     
     # get "/movie_characters" do
