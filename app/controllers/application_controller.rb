@@ -9,10 +9,23 @@ class ApplicationController < Sinatra::Base
     #   User.find(params[:id]).to_json
     # end
 
-    get "/users/:login" do
-      binding.pry
-      User.find_by(params[:login]).to_json
+    post "/users" do
+      User.find_by(params).to_json
     end
+
+    get "/colleges" do
+      College.all.to_json
+    end
+
+    get "/colleges/:college_name" do
+      College.find_by(params).to_json
+    end
+
+    get "/colleges/:college_name/posts" do
+      College.find_by(params).posts.to_json
+    end
+
+
     
     # get "/movie_characters" do
     # movie.movie_characters.all{}
