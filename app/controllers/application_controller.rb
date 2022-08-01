@@ -1,17 +1,15 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
-    # get "/test" do
-    # { message: "Good luck with your project!" }.to_json
-    # end
-
-    # get "/users/:id" do
-    #   User.find(params[:id]).to_json
-    # end
-
+    #handles login
     post "/users" do
       User.find_by(params).to_json
     end
+
+    post "/newpost" do
+      Post.create(params).to_json
+    end
+    
 
     get "/colleges" do
       College.all.to_json
@@ -25,6 +23,10 @@ class ApplicationController < Sinatra::Base
       College.find_by(params).posts.to_json
     end
 
+    
+    # get "/users/:id" do
+    #   User.find(params[:id]).to_json
+    # end
 
     
     # get "/movie_characters" do
