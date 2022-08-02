@@ -27,6 +27,10 @@ class ApplicationController < Sinatra::Base
       User.find_by(params).posts.to_json
     end
 
+    delete "/my_posts/:id" do
+      Post.find_by(params).destroy
+    end
+
     
     # get "/users/:id" do
     #   User.find(params[:id]).to_json
