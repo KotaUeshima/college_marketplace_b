@@ -26,6 +26,11 @@ class ApplicationController < Sinatra::Base
       User.find_by(params).posts.to_json
     end
 
+
+    delete "/my_posts/:id" do
+      Post.find_by(params).destroy
+    end
+
     # create User instance with signup form
     post "/create_account" do
       if (User.find_by(username: params[:username]) == nil)
