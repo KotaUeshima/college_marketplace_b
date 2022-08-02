@@ -5,4 +5,9 @@ Need to create an Item transaction page that has a way to buy the item -> instea
 
 User should be able to update price/etc of the item or remove the posting
 
-Add create an account for new users - tie it into the existing login button
+
+mui components to look into updating
+alerts - for welcoming/erroring login
+form dialog - to handle our form edit
+Drawer? for user info
+Menu for usr login/logout?
