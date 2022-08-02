@@ -8,6 +8,5 @@ User should be able to update price/etc of the item or remove the posting
 
 mui components to look into updating
 alerts - for welcoming/erroring login
-form dialog - to handle our form edit
 Drawer? for user info
 Menu for usr login/logout?

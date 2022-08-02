@@ -43,7 +43,12 @@ class ApplicationController < Sinatra::Base
       end
     end
 
-    
+    patch "/my_posts/:id" do
+      post = Post.find(params[:id])
+      post.update(params)
+      post.to_json
+    end
+
     # get "/users/:id" do
     #   User.find(params[:id]).to_json
     # end
