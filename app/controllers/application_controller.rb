@@ -24,6 +24,11 @@ class ApplicationController < Sinatra::Base
       User.find_by(params).posts.to_json
     end
 
+    get "/my_posts/:id/interests" do
+      interest = Interest.where("post_id == ?", params[:id])
+      interest.map { |u| u.user.username }.to_json
+    end
+
     get "/more_info/:id" do
       Post.find_by(params).to_json
     end
@@ -68,5 +73,12 @@ class ApplicationController < Sinatra::Base
     get '/searchnames' do
       College.all.to_json
     end
+
+    post '/interests' do
+      if Interest.find_by(params) == nil
+        Interest.create(params).to_json
+      end
+    end
+
 
 end
