@@ -65,4 +65,8 @@ class ApplicationController < Sinatra::Base
       ).to_json
     end
 
+    get '/searchnames' do
+      College.all.to_json
+    end
+
 end
