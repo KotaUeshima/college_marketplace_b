@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_29_201236) do
+ActiveRecord::Schema.define(version: 2022_08_04_183959) do
 
   create_table "colleges", force: :cascade do |t|
     t.string "college_name"
     t.string "image_url"
+  end
+
+  create_table "interests", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "post_id"
   end
 
   create_table "posts", force: :cascade do |t|
