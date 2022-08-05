@@ -9,7 +9,7 @@ class ApplicationController < Sinatra::Base
     end
 
     get "/colleges" do
-      College.all.to_json
+      College.all.sort { |a, b| a.college_name <=> b.college_name }.to_json
     end
 
     get "/colleges/:college_name" do
@@ -52,10 +52,6 @@ class ApplicationController < Sinatra::Base
       post.to_json
     end
 
-    # post "/newpost" do
-    #   Post.create(params).to_json
-    # end
-
     post '/newpost' do
       filename = params[:image][:filename]
       tempfile = params[:image][:tempfile]
@@ -70,15 +66,10 @@ class ApplicationController < Sinatra::Base
       ).to_json
     end
 
-    get '/searchnames' do
-      College.all.to_json
-    end
-
     post '/interests' do
       if Interest.find_by(params) == nil
         Interest.create(params).to_json
       end
     end
-
 
 end
