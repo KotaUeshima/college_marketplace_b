@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="YDT_TaS3kMQTjHpa-z7L" name="Page-1">
-        <mxGraphModel dx="862" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="807" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -15,10 +15,10 @@
                 <mxCell id="21" style="edgeStyle=none;html=1;entryX=-0.017;entryY=0.651;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" style="edgeStyle=none;html=1;entryX=0.317;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="22">
+                <mxCell id="24" style="edgeStyle=none;html=1;entryX=0.317;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="22" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=none;html=1;entryX=0.16;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="22">
+                <mxCell id="25" style="edgeStyle=none;html=1;entryX=0.16;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="22" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="user login&lt;br&gt;username&lt;br&gt;password&lt;br&gt;*id&lt;br&gt;t.string &quot;user_name&quot;&lt;br&gt;t.string &quot;password&quot;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
@@ -32,6 +32,9 @@
                         <mxPoint x="220" y="350" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0.858;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="3" value="Posts&lt;br&gt;t.string &quot;item_name&quot;&lt;br&gt;t.string &quot;image_url&quot;&lt;br&gt;t.integer &quot;price&quot;&lt;br&gt;t.integer &quot;phone_number&quot;&lt;br&gt;t.integer &quot;user_id&quot;&lt;br&gt;t.integer &quot;college_id&quot;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="300" y="260" width="180" height="180" as="geometry"/>
                 </mxCell>
@@ -44,13 +47,21 @@
                 <mxCell id="5" value="First thing seen is list of&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; display: inline ; float: none&quot;&gt;College&lt;br&gt;&lt;/span&gt;/college/posts&lt;br&gt;&lt;br&gt;t.string &quot;college_name&quot;&lt;br&gt;t.string &quot;image_url&quot;&lt;br&gt;*id" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="570" y="260" width="180" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="22" target="3">
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="22" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" style="edgeStyle=none;html=1;entryX=0.082;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="22" target="3">
+                <mxCell id="27" style="edgeStyle=none;html=1;entryX=0.082;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="22" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="Interest&lt;br&gt;a user has interest in many posts&lt;br&gt;a post can have many intersts from many users&lt;br&gt;t.integer user_id&lt;br&gt;t.integer post_id" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                <mxCell id="28" style="edgeStyle=none;html=1;" edge="1" parent="1" source="22">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;html=1;entryX=0.17;entryY=-0.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="22" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Interest&lt;br&gt;a user has interest in many posts&lt;br&gt;a post can have many intersts from many users&lt;br&gt;t.integer user_id&lt;br&gt;t.integer post_id" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="170" y="10" width="160" height="160" as="geometry"/>
                 </mxCell>
             </root>

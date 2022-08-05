@@ -37,6 +37,10 @@ c17 = College.create(college_name: "Oklahoma State", image_url: "https://1000log
 c18 = College.create(college_name: "Oregon", image_url: "https://1000logos.net/wp-content/uploads/2017/12/Oregon-Ducks-Logo.jpg")
 c19 = College.create(college_name: "SMU", image_url: "https://1000logos.net/wp-content/uploads/2019/10/0007_SMU-Mustangs.jpg")
 c20 = College.create(college_name: "Texas A&M", image_url: "https://1000logos.net/wp-content/uploads/2022/02/Texas-AM-Aggies-logo-tumb.jpg")
+c21 = College.create(college_name: "Arizona", image_url: "https://1000logos.net/wp-content/uploads/2021/06/Arizona-Wildcats-logo.png")
+c22 = College.create(college_name: "Boston College", image_url: "https://1000logos.net/wp-content/uploads/2021/06/Boston-College-Eagles-logo.png")
+c23 = College.create(college_name: "Fresno State", image_url: "https://1000logos.net/wp-content/uploads/2019/08/Fresno-State-Bulldogs.jpg")
+c24 = College.create(college_name: "Wisconsin", image_url: "https://1000logos.net/wp-content/uploads/2019/10/Wisconsin-Badgers.jpg")
 
 puts "Creating posts..."
 p1 = Post.create(item_name: "Bed Frame", image_url: "https://media.istockphoto.com/photos/bed-construction-picture-id1225367171?k=20&m=1225367171&s=612x612&w=0&h=yAa57KszobVOqspjRQcyGoxiWvTXgfNCnul5S8UnYbc=", price: 500, phone_number: "423-555-6565", user_id: u1.id, college_id: c1.id)
